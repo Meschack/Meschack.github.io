@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulaire</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body id="formBody">
+        <div class="container-fluid my-4">
+            <form action="">
+                <div class="mb-3 infoPersonnelles inputDiv">
+                    <h2>Informations Personnelles</h2>
+                    <div>
+                        <label for="nameInput" class="form-label">Nom</label>
+                        <input
+                            type="text"
+                            id="nameInput"
+                            class="form-control text-uppercase"
+                        />
+                    </div>
+                    <div class="mt-3">
+                        <label for="surnameInput" class="form-label"
+                            >Prénom</label
+                        >
+                        <input
+                            type="text"
+                            id="surnameInput"
+                            class="form-control text-capitalize"
+                        />
+                    </div>
+                    <div class="mt-3">
+                        <label for="description" class="form-label"
+                            >Décrivez vous !</label
+                        >
+                        <textarea
+                            type="text"
+                            id="description"
+                            class="form-control"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="compteAccess inputDiv">
+                    <h2>Compte Access</h2>
+                    <div class="mt-3">
+                        <label for="emailInput" class="form-label"
+                            >Adresse électronique</label
+                        >
+                        <input
+                            type="email"
+                            id="emailInput"
+                            class="form-control"
+                            placeholder="nom@domaine.com"
+                        />
+                    </div>
+                    <div class="mt-3">
+                        <label for="passwordInput" class="form-label"
+                            >Mot de passe</label
+                        >
+                        <input
+                            type="password"
+                            id="passwordInput"
+                            class="form-control"
+                        />
+                    </div>
+                </div>
+
+                <div class="sexe inputDiv">
+                    <h2>Sexe</h2>
+                    <div class="mt-3">
+                        <div>
+                            <input
+                                type="radio"
+                                id="masculin"
+                                class="form-check-input"
+                                name="sexe"
+                            />
+                            <label for="masculin" class="form-check-label"
+                                >Masculin</label
+                            >
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="feminin"
+                                class="form-check-input"
+                                name="sexe"
+                            />
+                            <label for="feminin" class="form-check-label"
+                                >Féminin</label
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div id="diplomes" class="inputDiv">
+                    <h2>Diplomes</h2>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="licence"
+                            class="form-check-input"
+                        />
+                        <label for="licence" class="form-check-label"
+                            >Licence</label
+                        >
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="bac"
+                            class="form-check-input"
+                        />
+                        <label for="bac" class="form-check-label">Bac</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="bepc"
+                            class="form-check-input"
+                        />
+                        <label for="bepc" class="form-check-label">Bepc</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="cep"
+                            class="form-check-input"
+                        />
+                        <label for="cep" class="form-check-label">CEP</label>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between m-4 bg-light p-2 rounded-3">
+                    <button class="btn btn-outline-success" type="submit">Soumettre</button>
+                    <button class="btn btn-outline-danger" type="reset">Effacer</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
